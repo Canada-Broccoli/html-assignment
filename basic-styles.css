@@ -1,0 +1,58 @@
+@keyframes zoom-in {
+    from{transform: scale(10); opacity: 0;}
+    to{transform: scale(1); opacity: 1;}
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+header{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    background-color: azure;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    animation: zoom-in 1s forwards;
+}
+
+.inside{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.btn-div{
+    background-color: aqua;
+}
+span{
+    background-color: blanchedalmond;
+    width: 10px;
+    height: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: wheat;
+    width: 100vw;
+    height: auto;
+    background-color:blue;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
