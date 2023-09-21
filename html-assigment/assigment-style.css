@@ -20,6 +20,12 @@ header{
     width: 80vw;
 }
 
+sup{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*----------------------------------------*/
 .clm{
     display: flex;
     justify-content: start;
