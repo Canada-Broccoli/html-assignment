@@ -38,6 +38,14 @@ sup{
 
 /*----------------------------------------*/
 
+.site-title{
+    font-size: 35px;
+    font-weight: 900;
+    color: blueviolet;
+    animation: in-right 1s forwards;
+    font-family:fantasy;
+}
+
 .clm{
     display: flex;
     justify-content: start;
@@ -59,7 +67,7 @@ sup{
 .hidden{overflow: hidden;}
 
 .wide{
-    margin: 0px 10px 0px 10px;
+    margin: 10px;
 }
 
 cite{
@@ -96,28 +104,22 @@ cite{
     padding: 10px;
 }
 
-ul{ 
-    font-size: large;
-    font-weight: bold;
-    border-style: dotted;
-    border-radius: 30px;
-    border-width: 1px;
-    width: 50vw;
-    list-style: square;
-}
-
 #my-image{
     width: 10vw;
     box-shadow: 0px 2px 1px;
     margin: 20px;
 }
 
-ul li:nth-child(odd){
+.hb .hbl:nth-child(odd){
     background-color: #ff9494;
     width: 20vw;
 }
 
-ul:hover{
+.hbl{
+    transition: 1s;
+}
+
+.hbl:hover{
     list-style: disc;
     list-style-image: url("image/logo-l.svg");
     font-size: 30px;
@@ -134,4 +136,31 @@ a{
     animation-iteration-count: 3;
     width: 50px;
     margin: 20px;
+}
+
+.nav{
+    list-style: none;
+}
+
+.nav li{
+    background-color: whitesmoke;
+    border-style: dotted;
+    border-radius: 30px;
+    border-width: 1px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.nav li:hover{
+    padding: 20px;
+    font-size: 30px;
+    background-color: blueviolet;
+}
+
+.nav li a{
+    color: blueviolet;
+}
+
+.nav li a:hover{
+    color: aliceblue;
 }

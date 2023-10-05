@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 
-header{
-    width: 100%;
+header, footer{
+    background-color: beige;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    stroke-width: 10px;
-    border-color: black;
+    width: 80vw;
+    border-style: solid;
+    border-color: brown;
+    border-radius: 50px;
+    border-width: 30px;
 }
+
 
 #title, #menu{
     display: flex;
@@ -90,4 +94,40 @@ form{
 
 .small{
     width: 10px !important;
+}
+
+
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+.nav li{
+    background-color: whitesmoke;
+    border-style: dotted;
+    border-radius: 30px;
+    border-width: 1px;
+    padding: 10px;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+.nav li:hover{
+    padding: 20px;
+    font-size: 30px;
+    background-color: blueviolet;
+}
+
+.nav li a{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.nav li a:hover{
+    color: aliceblue;
 }
