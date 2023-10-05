@@ -3,21 +3,32 @@
     to{background-color: black; color: white; padding: 20px;}
 }
 
+@keyframes in-right {
+    from{transform: translateX(100px);}
+    from{transform: translateX(20px);}
+}
+
 body{
+    font-size: 18px;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
     width: 100vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-header{
-    background-color: aqua;
+header, footer{
+    background-color: beige;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 80vw;
+    border-style: solid;
+    border-color: brown;
+    border-radius: 50px;
+    border-width: 30px;
 }
 
 sup{
@@ -26,6 +37,7 @@ sup{
 }
 
 /*----------------------------------------*/
+
 .clm{
     display: flex;
     justify-content: start;
@@ -39,6 +51,12 @@ sup{
     align-items: start;
     flex-direction: row;
 }
+
+.center{
+    align-items: center;
+}
+
+.hidden{overflow: hidden;}
 
 .wide{
     margin: 0px 10px 0px 10px;
@@ -69,4 +87,51 @@ cite{
 .photo{
     width: 100px;
     height: auto;
+}
+
+.hb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+ul{ 
+    font-size: large;
+    font-weight: bold;
+    border-style: dotted;
+    border-radius: 30px;
+    border-width: 1px;
+    width: 50vw;
+    list-style: square;
+}
+
+#my-image{
+    width: 10vw;
+    box-shadow: 0px 2px 1px;
+    margin: 20px;
+}
+
+ul li:nth-child(odd){
+    background-color: #ff9494;
+    width: 20vw;
+}
+
+ul:hover{
+    list-style: disc;
+    list-style-image: url("image/logo-l.svg");
+    font-size: 30px;
+    cursor: pointer;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+#r-dot{
+    animation: in-right 1s forwards;
+    animation-iteration-count: 3;
+    width: 50px;
+    margin: 20px;
 }

@@ -5,9 +5,16 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     stroke-width: 10px;
     border-color: black;
+}
+
+#title, #menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 body{
@@ -31,6 +38,7 @@ img{
 
 h1{
     font-family: 'Mooli', sans-serif;
+    color: #44b55dff;
 }
 
 h4{margin: 0;}

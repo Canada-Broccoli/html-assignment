@@ -5,28 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assigment-style.css">
+    <link rel="stylesheet" type="text/css" href="btn-style.css">
     <title>Assigment of Jing-An</title>
 </head>
 <body>
     <header>
         <h1>Little page about Jing-An Chen</h1>
         <div class="clm">
-            <p>if you have interested in my other works.</p>
-            <sup>(which is a hug mess, so be careful.)</sup>
+            <p>With corrections of Simple HTML assignment</p>
+            <sup>(I've run the test, note.html link works properly.)</sup>
+            <sup>(If you still can't see the page, please notice me.)</sup>
             <nav>
-                <ul class="row">
-                    <li class="wide"><a href="#">home</a></li>
+                <ul class="row hb nav">
+                    <li class="wide"><a href="index.html">home</a></li>
                     <li class="wide"><a href="note.html">note page</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
+        <!-- my image -->
+        <div class="row center hidden">
+            <img id="my-image" src="image/logo-l.svg" alt="logo-pic">
+            <img id="r-dot" src="image/logo-r.svg">
+            <sup>The left icon has a shadow if you look closely.</sup>
+        </div>
+        <!-- btn css test -->
+        <div id="btn-test">
+            <span><a href="https://template.match19co.com/m3/">check this</a></span>
+        </div>
+        <!-- the end of btn test -->
+        <!-- dls -->
+        <h3>HTML tags intro</h3>
+        <dl>
+            <!-- 1 -->
+            <dt><abbr title="abbrivation">abbr</abbr></dt>
+            <dd>abbrivation tag, can show the full name of abbrivation.</dd>
+            <!-- 2 -->
+            <dt><abbr title="article">article</abbr></dt>
+            <dd>article tag, can contain different paragraph & heading tags.</dd>
+            <!-- 3 -->
+            <dt><abbr title="bold">b</abbr></dt>
+            <dd>bold tag, makes the font-weight increase.</dd>
+            <!-- 4 -->
+            <dt><abbr title="citing tag">blockquote</abbr></dt>
+            <dd>blockquote tag, use this tag when you need to cite some quotes.</dd>
+            <!-- 5 -->
+            <dt><abbr title="break">br</abbr></dt>
+            <dd>break tag, veryuseful tag when you need to break your paragraph<br>
+                but don't want to make a new p tag.</dd>
+        </dl>
+        <!-- end of dls -->
         <h2>My Hobbies</h2>
-        <ol>
-            <li>Movies</li>
-            <li>Body Building</li>
-        </ol>
+        <div class="hb">
+            <ul class="hb clm">
+                <li>Movies</li>
+                <li>Body Building</li>
+                <li>More Movies</li>
+                <li>Japanese Anime</li>
+                <li>Body Building</li>
+            </ul>
+        </div>
         <h2>About Me</h2>
         <div>
             <em>"It looks just like a magic newspaper in <abbr title="Harry Potter">H.P.</abbr><del>(Lovecraft)</del>" </em>
@@ -69,6 +108,7 @@
         </div>
     </main>
     <footer>
+        <p>I did put information in my footer!</p>
         <p>Copyright &copy; Jing-An Chen. all rights reserved.</p>
     </footer>
 </body>
